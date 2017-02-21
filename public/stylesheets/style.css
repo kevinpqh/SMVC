@@ -14,3 +14,7 @@
     color: #ccc;
 }
 #filter {margin-left: 4px;}
+video {
+    width: 100%;
+    height: auto;
+}

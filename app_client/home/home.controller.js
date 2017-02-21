@@ -15,6 +15,9 @@ function homeCtrl ($scope, loc8rData, geolocation,authentication) {
 
     vm.message = "Checking your location";
 
+    if(!authentication.isLoggedIn()){
+        return;
+    }
     vm.currentUser = authentication.currentUser();
     
     // vm.getData = function (position) {
@@ -282,7 +285,7 @@ function homeCtrl ($scope, loc8rData, geolocation,authentication) {
         vm.login = function () {
             var phone = window.phone = PHONE({
                 //number        : form.username.value || "Anonymous", // listen on username line else Anonymous
-                number        : vm.currentUser.email || "Anonymous", // listen on username line else Anonymous
+                number        : vm.currentUser.username || "Anonymous", // listen on username line else Anonymous
                 publish_key   : 'pub-c-561a7378-fa06-4c50-a331-5c0056d0163c', // Your Pub Key
                 subscribe_key : 'sub-c-17b7db8a-3915-11e4-9868-02ee2ddab7fe', // Your Sub Key
                 ssl           : true
