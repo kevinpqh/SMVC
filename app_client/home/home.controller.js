@@ -274,7 +274,7 @@ function homeCtrl ($scope, loc8rData, geolocation,authentication) {
         return document.querySelector( query );
     }
 
-    onBistriConferenceReady();
+    //onBistriConferenceReady();
 
     //videoconference = function (){
 
