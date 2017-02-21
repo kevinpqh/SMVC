@@ -10,7 +10,7 @@
           <div class="row"> 
             <div class="col-xs-12 col-md-12">
               <div  class="thumbnail">
-                <div id="video-thumbnail"></div>
+                <div id="vid-box"></div>
               </div>
             </div>
           </div>
@@ -30,9 +30,9 @@
               <span class="glyphicon glyphicon-facetime-video"></span>
             </button>
             <button id="fin" class="btn btn-success" ng-click="vm.makeCall()">
-              <span class="glyphicon glyphicon-stop" ></span>
+              <span class="glyphicon glyphicon-earphone" ></span>
             </button>
-            <button id="pause" class="btn btn-danger" ng-click="vm.funciones.mute()">
+            <button id="pause" class="btn btn-danger" ng-click="vm.mute()">
               <span class="glyphicon glyphicon-pause"></span>
             </button>
           </div>
@@ -52,7 +52,7 @@
             <div class="pane" id="pane_1" style="display: none">
               <input type="text" placeholder="Ingrese Usuario a Llamar" id="room_field" class="form-control" ng-model="vm.formData.numero">
               <br>
-              <input type="button" value="Llamar" id="join" class="btn btn-info btn-default btn-block">
+              <input type="button" value="iniciar chat" id="join" class="btn btn-info btn-default btn-block">
             </div>
             <div class="pane" id="pane_2" style="display: none">
               <div id="messages_container">
