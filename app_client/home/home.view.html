@@ -1,0 +1,116 @@
+<navigation></navigation>
+
+<br/>
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="row ">
+      <div class="col-md-8" >
+        <div class="row">
+          <!--<img src="images/remote.jpg" id="remoteimg" class="img-responsive"/>-->
+          <div class="col-xs-12 text-center">
+                 
+                    <div id="pubnub-relative">
+                        <div id="video-thumbnail"></div>
+                      
+                    </div>
+                </div>
+          <!--<video id='remoteVideo' autoplay width="100%" class="remote"></video>-->
+        </div>
+      </div>
+      <div class="col-md-4 local" >
+        <div class="row">
+          <!--<img src="images/local.jpg" id="localimg" class="img-responsive"/>-->
+          <div class="col-xs-12 text-center">
+                    <!--<div id="video-border">
+                        <div class="pubnub-relative">
+                            <div id="video-self">...834y8uask</div>
+                        </div>
+                        <div id="video-display">
+                            <span class="glyphicon glyphicon-flash"></span>
+                        </div>
+                    </div>-->
+                    <div id="pubnub-relative">
+                        <div id="video-display"></div>
+                        <!--<div id="pubnub-logo">
+                            <div id="pubnub-logo-img"></div>
+                        </div>-->
+                    </div>
+                </div>
+          <!--<video id='localVideo' autoplay muted width="100%" ></video>-->
+          <div class="">
+            <button id="conectar" class="btn btn-warning" ng-click="vm.login()">
+              <span class="glyphicon glyphicon-facetime-video"></span>
+            </button>
+            <!--<input type="text" placeholder="Ingrese Numero a llamar" id="numero" ng-model="vm.formData.numero" class="form-control">-->
+                    <!--<button id="llamar" class="btn btn-primary" ng-click="vm.funciones.makeCall()">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                    </button>-->
+                    <button id="fin" class="btn btn-success" ng-click="vm.funciones.end()">
+                        <span class="glyphicon glyphicon-stop" ></span>
+                    </button>
+                    <button id="pause" class="btn btn-danger" ng-click="vm.funciones.mute()">
+                        <span class="glyphicon glyphicon-pause"></span>
+                    </button>    
+          </div>
+        <div class="row">
+          <div id="chat" class="txtarea fullsz"></div>
+          <!--<input type="text" id="msg" placeholder="Press enter to send message" class="fullsz form-control"/>-->
+
+          <!--EJEMPLO-->
+          <div class="pane" id="pane_0">
+            <input type="text" placeholder="Nickname" id="nick_field" class="form-control">
+            <br>
+            <input type="button" value="Set Nickname" id="nick" class="btn btn-info btn-default btn-block">
+          </div>
+          <div class="pane" id="pane_1" style="display: none">
+            <input type="text" placeholder="Ingrese Usuario a Llamar" id="room_field" class="form-control" ng-model="vm.formData.numero">
+            <br>
+            <input type="button" value="Llamar" id="join" class="btn btn-info btn-default btn-block">
+          </div>
+          <div class="pane" id="pane_2" style="display: none">
+            <div id="messages_container">
+            </div>
+            <p>
+              <input type="text" placeholder="Message" id="message_field" class="form-control">
+            </p>
+            <input type="button" value="Send Message" id="send" disabled class="btn btn-success btn-default btn-block">
+            <input type="button" value="Quit Chat Room" id="quit" class="btn btn-danger btn-default btn-block">
+          </div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="row">
+
+    <div class="col-xs-12 col-sm-8">
+      <label for="filter">Filter results</label>
+      <input id="filter" type="text", name="filter", ng-model="textFilter">
+      <div class="error">{{ vm.message }}</div>
+      <div class="row list-group">
+        <div class="col-xs-12 list-group-item" ng-repeat="location in vm.data.locations | filter : textFilter">
+          <h4>
+            <a href="#/location/{{ location._id }}">{{ location.name }}</a>
+            <small class="rating-stars" rating-stars rating="location.rating"></small>
+            <span class="badge pull-right badge-default">{{ location.distance |formatDistance }}</span>
+          </h4>
+          <p class="address">{{ location.address }}</p>
+          <p>
+            <span class="label label-warning label-facility" ng-repeat="facility in location.facilities">
+              {{ facility }}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <p class="lead">{{ vm.sidebar.content }}</p>
+    </div>
+  </div>-->
+
+ 
+</div>
