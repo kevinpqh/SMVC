@@ -356,7 +356,7 @@ function homeCtrl ($scope, loc8rData, geolocation,authentication) {
                 data: {
                     room: 'default',
                     application: 'default',
-                    domain: 'kevingleason.me',
+                    domain: 'videoconsult.herokuapp.com',
                     ident: 'gleasonk',
                     secret: 'b9066b5e-1f75-11e5-866a-c400956a1e19',
                     secure: 1,
